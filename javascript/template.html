@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript入門</title>
+</head>
+
+<body>
+    <script>
+        const seed = [
+            "a", "b", "c", "d", "e"
+        ]
+        let length = Number(window.prompt("何文字のパスワードを作りますか？"));
+        console.log(length);
+        let password = "";
+        let random;
+        for (let i = 0; i < length; i++) {
+            random = Math.floor(Math.random() * seed.length);
+            console.log(seed.length);
+            password = password + seed[random];
+        }
+        console.log("PW=" + password);
+    </script>
+</body>
+
+</html>
